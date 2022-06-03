@@ -1,0 +1,17 @@
+.png{
+    animation: flot 5s infinite;
+}
+
+@keyframes flot {
+    0%{
+        transform: translateY(0px);
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateY(40px);
+    
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}

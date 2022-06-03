@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://pagecdn.io/lib/easyfonts/fonts.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation/animation.css">
+    <title>Weather</title>
+  </head>
+  <body onload="display_ct();">
+    <div class="time">
+      <h1><span id="ct"></span></h1>
+    </div>
+    <div class="container">
+      <!-- left container -->
+      <div class="left">
+        <div class="top">
+          <div id="loc">
+            <h2>SONARPUR,</h2>
+          </div>
+          <div id="stname">
+            <h4 id="location"></h4>
+          </div>
+          <div id="date">
+            <h3><span id="time"> </span></h3>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="box">
+            <div class="icon">
+              <img id="tempicon" class="png" src=""style="width:150px;position: fixed;">
+            </div>
+            <div class="temp"style="display: flex;">
+              <h1 id="temp"></h1>
+              <h1>°C</h1>
+            </div>
+            <div class="wcon">
+              <h4 id="weather"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right container -->
+      <div class="right">
+        <div class="report">
+          <div class="con"></div>
+          <div class="con"></div>
+          <div class="con"></div>
+          <div class="con"></div>
+          <div class="con"></div>
+          <div class="con"></div>
+        </div>
+        <div class="calender">
+          <div class="container2">
+            <div class="calendar">
+              <div class="month">
+                <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                  <h1></h1>
+                  <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
